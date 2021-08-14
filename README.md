@@ -1,4 +1,4 @@
-# GraphQL testing example
+# Graphql-MongoMemoryServer example
 
 NodeJS GraphQL MongoMemoryServer test example.
 

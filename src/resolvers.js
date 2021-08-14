@@ -14,8 +14,6 @@ const resolvers = {
       return userPromise;
     }
     // No user were found
-    // return ?
-    // return db.collection("users").findOne({ id });
   },
   // Mutations
   addUser: async ({ name, email, posts }, context) => {

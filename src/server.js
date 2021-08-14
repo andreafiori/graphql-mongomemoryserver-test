@@ -3,8 +3,7 @@ const graphqlHTTP = require('express-graphql').graphqlHTTP;
 const schema = require("./schema");
 const resolvers = require("./resolvers");
 const { startDatabase } = require("./database");
-const expressPlayground = require("graphql-playground-middleware-express")
-  .default;
+const expressPlayground = require("graphql-playground-middleware-express").default;
 
 // Create a context for holding contextual data (db info in this case)
 const context = async () => {
@@ -24,7 +23,7 @@ app.use(
   })
 );
 
-//Graphql Playground route
+// Graphql Playground route
 app.get("/playground", expressPlayground({ endpoint: "/graphql" }));
 
 module.exports = app;

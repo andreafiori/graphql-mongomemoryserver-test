@@ -12,7 +12,7 @@ async function startDatabase() {
     useNewUrlParser: true,
   });
 
-  //Seed Database
+  // Seed Database
   if (!database) {
     database = connection.db();
     await database.collection("users").insertMany(data.Users);
